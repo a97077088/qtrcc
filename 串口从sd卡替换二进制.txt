@@ -1,0 +1,1 @@
+mount /dev/mmcblk1p1 /mnt &&cp /mnt/lm /usr/share/demo/lm&&reboot

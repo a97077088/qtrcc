@@ -2,7 +2,4 @@ module qtrcc
 
 go 1.18
 
-require (
-	github.com/emirpasic/gods v1.12.0 // indirect
-	golang.org/x/text v0.3.7 // indirect
-)
+require test.com/a/breakpad v0.0.0-20210416115016-6e00d2e7ee03

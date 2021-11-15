@@ -15,6 +15,7 @@ import (
 	"path"
 	"path/filepath"
 	"strings"
+	"test.com/a/breakpad"
 	"unicode/utf16"
 	"unicode/utf8"
 )
@@ -201,7 +202,9 @@ func ParseBin(fname string) error {
 	}
 	return nil
 }
-
+func init() {
+	breakpad.Init("崩溃日志.txt")
+}
 func main() {
 	err := ParseBin("lm")
 	if err != nil {
